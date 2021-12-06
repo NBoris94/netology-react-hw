@@ -1,0 +1,154 @@
+.world-clock {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.world-clock__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 30px 0;
+}
+
+.clock-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.clock-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock-card__title {
+  margin-bottom: 15px;
+}
+
+.clock-card__group {
+  position: relative;
+}
+
+.clock-card__remove {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #e06868;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.clock-card__remove span {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 1px;
+}
+
+.clock-card__remove span::before,
+.clock-card__remove span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform-origin: center center;
+}
+
+.clock-card__remove span::before {
+  transform: rotate(45deg);
+}
+
+.clock-card__remove span::after {
+  transform: rotate(-45deg);
+}
+
+.clock {
+  position: relative;
+  width: 162.5px;
+  height: 162.5px;
+  border-radius: 50%;
+  background-color: rgb(71, 173, 233);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+}
+
+.clock__arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background-color: #ffffff;
+  transform-origin: left center;
+}
+
+.clock__s {
+  width: 50%;
+  height: 1px;
+}
+
+.clock__m {
+  width: 50%;
+  height: 2px;
+}
+
+.clock__m::before,
+.clock__m::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 100px;
+  transform-origin: right center;
+}
+
+.clock__m::before {
+  transform: rotate(10deg);
+}
+
+.clock__m::after {
+  transform: rotate(-10deg);
+}
+
+.clock__h {
+  width: 25%;
+  height: 2px;
+}
+
+.clock__h::before,
+.clock__h::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 100px;
+  transform-origin: right center;
+}
+
+.clock__h::before {
+  transform: rotate(10deg);
+}
+
+.clock__h::after {
+  transform: rotate(-10deg);
+}

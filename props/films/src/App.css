@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: #faf7f1;
+}
+
+ul.u-clearfix li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.film-cards {
+  padding: 50px 0;
+}
+
+.film-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 60px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.film-card__poster {
+  position: relative;
+  width: 120px;
+}
+
+.film-card__img {
+  width: 100%;
+  margin-top: -50px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.film-card__info {
+  width: 440px;
+  margin-left: 20px;
+}
+
+.film-card__genre {
+  position: absolute;
+  top: -30px;
+  right: -13px;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  padding: 5px 8px;
+  border-radius: 2px;
+  color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.film-card__genre_orange {
+  background-color: #ff9a0f;
+}
+
+.film-card__genre_brown {
+  background-color: #865343;
+}
+
+.film-card__actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.film-card__like {
+  margin-right: 5px;
+}
+.film-card__like,
+.film-card__share {
+  color: #9c948a;
+}
+
+.film-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #6f6f6f;
+}
+
+.film-card__rating {
+  margin-bottom: 20px;
+}
+
+.film-card__btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.film-card__buy {
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #9c948a;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.film-card__more {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #9c948a;
+}
+
+.film-card__more span {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.card-body-stars {
+  display: flex;
+}

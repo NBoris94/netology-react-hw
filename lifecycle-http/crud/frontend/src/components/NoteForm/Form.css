@@ -1,0 +1,40 @@
+.form__text-field {
+  position: relative;
+  padding: 30px;
+  border: 1px solid rgb(54, 172, 250);
+  border-radius: 30px;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+.form__submit {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(54, 172, 250);
+  color: rgb(54, 172, 250);
+  border-radius: 50%;
+}
+
+.form__submit:hover {
+  color: #fff;
+  background-color: rgb(54, 172, 250);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form__submit:active {
+  box-shadow: none;
+}
+
+.form__submit span {
+  margin-left: 5px;
+}

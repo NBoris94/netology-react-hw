@@ -1,0 +1,85 @@
+.my-notes {
+  width: 100%;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.my-notes__group {
+  display: flex;
+  align-items: center;
+}
+
+.my-notes__reload {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  color: rgb(54, 190, 156);
+  border: 1px solid rgb(54, 190, 156);
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.my-notes__reload:hover {
+  color: #fff;
+  background-color: rgb(54, 190, 156);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.my-notes__reload:active {
+  box-shadow: none;
+}
+
+.my-notes__reload span {
+  margin-right: 8px;
+}
+
+.my-notes__divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(223, 223, 223);
+  margin: 30px 0;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.note {
+  position: relative;
+  width: 300px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgb(252, 220, 133);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note__delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  color: rgb(199, 67, 67);
+  background-color: #fff;
+  border: 1px solid rgb(199, 67, 67);
+  border-radius: 30px;
+}
+
+.note__delete:hover {
+  color: #fff;
+  background-color: rgb(199, 67, 67);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note__delete:active {
+  box-shadow: none;
+}

@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: Arial;
+  font-size: 1rem;
+}
+
+.converter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.converter__input-hex {
+  display: block;
+  width: 200px;
+  padding: 20px 0px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.converter__rgb-field {
+  display: block;
+  width: 200px;
+  padding: 20px 0px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}

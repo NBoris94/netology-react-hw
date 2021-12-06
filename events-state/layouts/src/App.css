@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.switcher {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.switcher__btn span {
+  font-size: 2rem;
+  color: #777;
+  transition: all 0.3s ease-in-out;
+}
+
+.switcher__btn:hover span {
+  color: #000;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #0e0e0e;
+}
+
+.subtitle {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.text-primary {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #e5443a;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 10px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #e5443a;
+  border: 1px solid #e5443a;
+  border-radius: 1000px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e5443a;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 150px;
+  row-gap: 40px;
+  padding: 40px 20px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  background-color: #f5f5f6;
+  box-shadow: 0px 10px 10px #aaaaaa;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__name {
+  position: relative;
+  text-align: center;
+}
+
+.card__color {
+  position: relative;
+  text-align: center;
+}
+
+.card__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.card__group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.items {
+  padding: 40px 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+  margin-bottom: 1px;
+  background-color: #f5f5f6;
+  overflow: hidden;
+}
+
+.item__img {
+  width: 150px;
+  margin-top: -30px;
+}

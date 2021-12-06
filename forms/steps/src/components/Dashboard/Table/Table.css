@@ -1,0 +1,26 @@
+.table {
+  width: 100%;
+}
+
+.table th {
+  padding-bottom: 30px;
+}
+
+.table tbody {
+  box-shadow: 0 0 0 2px #000000;
+  border-radius: 10px;
+}
+
+.table td {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.edit,
+.delete {
+  font-size: 1.5rem;
+}
+
+.delete {
+  margin-left: 10px;
+}
