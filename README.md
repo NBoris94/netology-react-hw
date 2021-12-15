@@ -6,3 +6,5 @@
 4. [Формы](forms)
 5. [Композиция компонентов](composition)
 6. [Жизненный цикл и работа с HTTP](lifecycle-http)
+7. [HOC](hoc)
+8. [hooks, Context API](hooks, context API)
