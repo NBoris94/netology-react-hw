@@ -8,3 +8,4 @@
 6. [Жизненный цикл и работа с HTTP](lifecycle-http)
 7. [HOC](hoc)
 8. [hooks, Context API](hooks-context)
+9. [React Router](router)
