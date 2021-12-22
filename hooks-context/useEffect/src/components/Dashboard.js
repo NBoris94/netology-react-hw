@@ -4,13 +4,23 @@ import Details from "./Details";
 
 function Dashboard() {
   const [list, setList] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [info, setInfo] = useState({});
   const [isEmptyInfo, setIsEmptyInfo] = useState(true);
 
-  const loadListHandler = () => {
-    fetch("https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/users.json ")
-      .then((response) => response.json())
-      .then((data) => setList(data));
+  const loadListHandler = async () => {
+    try {
+      const response = await fetch("https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/users.json");
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+      const data = await response.json();
+      setList(data);
+    } catch (e) {
+      console.log(e.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -24,7 +34,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <List list={list} onClickHandler={onClickHandler} />
+      {loading ? <p>Загрузка</p> : <List list={list} onClickHandler={onClickHandler} />}
       {isEmptyInfo ? null : <Details info={info} />}
     </div>
   );
