@@ -1,0 +1,172 @@
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.sevices {
+  margin-top: 50px;
+}
+
+.card {
+  padding: 40px;
+  margin: 40px 0;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card__header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card__body {
+  padding-top: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 20px;
+}
+
+.form__label {
+  display: block;
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  display: block;
+  border: 2px solid #555555;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #555555;
+}
+
+.form__btn {
+  padding: 12px 22px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.form__submit {
+  background-color: #44bd92;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.form__submit:hover {
+  background-color: #318769;
+}
+
+.form__cancel {
+  border: 2px solid #b53f3f;
+  color: #b53f3f;
+  padding: 10px 20px;
+}
+
+.form__cancel:hover {
+  background-color: #b53f3f;
+  color: #ffffff;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list__text {
+  display: inline-block;
+  font-size: 1rem;
+  color: #555555;
+}
+
+.list__price {
+  display: inline-block;
+  font-size: 1rem;
+  color: #555555;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.list__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.list__edit, .list__delete {
+  width: 35px;
+  height: 35px;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.list__edit span, .list__delete span {
+  font-size: 1.25rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.list__edit {
+  border-color: #d69a31;
+}
+
+.list__edit span {
+  color: #d69a31;
+}
+
+.list__edit:hover {
+  background-color: #d69a31;
+}
+
+.list__edit:hover span {
+  color: #fff;
+}
+
+.list__delete {
+  border-color: #b53f3f;
+}
+
+.list__delete span {
+  color: #b53f3f;
+}
+
+.list__delete:hover {
+  background-color: #b53f3f;
+}
+
+.list__delete:hover span {
+  color: #fff;
+}
