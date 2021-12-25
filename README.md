@@ -9,3 +9,4 @@
 7. [HOC](hoc)
 8. [hooks, Context API](hooks-context)
 9. [React Router](router)
+10. [Redux](redux)
